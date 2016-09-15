@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin:0;
+			}
+			#canvas{
+				display:block;
+				margin:100px auto;
+				border:1px solid #999;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<script>
+		//把七巧板的信息存放在数组中
+			var tong = [
+				{p:[{x:0,y:0},{x:400,y:0},{x:200,y:200}],color:"#caff67"},
+				{p:[{x:0,y:0},{x:200,y:200},{x:0,y:400}],color:"#67becf"},
+				{p:[{x:400,y:0},{x:400,y:200},{x:300,y:300},{x:300,y:100}],color:"#ef3d61"},
+				{p:[{x:300,y:100},{x:300,y:300},{x:200,y:200}],color:"#f9f51a"},
+				{p:[{x:200,y:200},{x:300,y:300},{x:200,y:400},{x:100,y:300}],color:"#a594c0"},
+				{p:[{x:100,y:300},{x:200,y:400},{x:0,y:400}],color:"#fa8ecc"},
+				{p:[{x:400,y:200},{x:400,y:400},{x:200,y:400}],color:"#f6ca29"}
+			]
+			//获取canvas
+			var canvas = document.getElementById('canvas');
+			canvas.width = 400;
+			canvas.height = 400;
+			//绘画环境
+			var context = canvas.getContext('2d');
+			//循环调用函数，绘制七巧板的每一块
+			for(var i = 0; i < tong.length; i++) {
+				draw(tong[i],context);
+			}
+			function draw(tong,context) {
+				//状态开始
+				context.beginPath();
+				context.moveTo(tong.p[0].x,tong.p[0].y);
+				for(var i = 1; i < tong.p.length; i++) {
+					context.lineTo(tong.p[i].x,tong.p[i].y);
+				}
+				//状态结束
+				context.closePath();
+				//设置填充的颜色
+				context.fillStyle = tong.color;
+				context.fill();
+				//设置线条的颜色
+				context.strokeStyle = '#000';
+				context.stroke();
+			}
+		</script>
+	</body>
+</html>
