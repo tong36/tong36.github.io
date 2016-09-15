@@ -2,7 +2,8 @@ var RADIUS = 8;
 var MARGIN_TOP = 60;
 var MARGIN_LEFT = 80;
 //截止的时间
-var endTime = new Date( 2016,8,11,12,0,0 );
+var word_time = new Date();
+var endTime = new Date( word_time.getFullYear(), word_time.getMonth(), word_time.getDate()+2, );
 var seconds = 0;
 var balls = [];
 const colors = ["#33B5E5","#0099CC","#AA66CC","#9933CC","#99CC00","#669900","#FFBB33","#FF8800","#FF4444","#CC0000"];
