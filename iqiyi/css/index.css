@@ -1,0 +1,1212 @@
+/*吊顶*/
+header{
+	width:1263px;
+	height:60px;
+	background-color: #000;
+	margin:0 auto;
+}
+h1{
+	width:105px;
+	height:60px;
+	background-position: 0px 0px;
+	*display:inline;
+	text-indent:-9999px;
+}
+nav{
+	width:90px;
+	height:38px;
+	background-position: 0px -60px;
+}
+header .search{
+	width:361px;
+	height:38px;
+}
+header .search_btn{
+	width:110px;
+	height:38px;
+	background-position: 0px -98px;
+}
+header .menu{
+	width:410px;
+	height:24px;
+	/*background-color:blue;*/
+}
+.menu .log_in{
+	margin-right:13px;	
+}
+.menu .login{
+	margin-right:9px;
+}
+.menu .vip{
+	margin-right:10px;
+}
+.hot{
+	width:7px;
+	height:7px;
+	*overflow: hidden;
+	background-position: 0px -136px;
+}
+.log_in_text, .login_text{
+	margin-top:1px;
+	*margin-top:2px;
+}
+.menu .up{
+	margin-right:10px;
+}
+.menu .up .hot{
+	position: absolute;
+	right:7px;
+	top:-5px;
+}
+.menu .up .hot{
+	margin-top:1px;
+	margin-right:1px;
+}
+.menu .up .up_pic{
+	margin-top:1px;
+	margin-right:1px;
+}
+.sanjiao{
+	margin-top:5px;
+	margin-left:3px;
+}
+.menu .duan .hot{
+	position: absolute;
+	right:-8px;
+	top:-5px;
+}
+.menu .duan{
+	margin-right:11px;
+}
+.menu .xiaoxi{
+	margin-right:9px;
+}
+/*头部*/
+.head{
+	width:1263px;
+	height:520px;
+	margin:0 auto;
+	background-color: #000;
+}
+/*头部——大图nav*/
+.head .head_nav{
+	position:relative;
+	width:1263px;
+	height:410px;
+}
+.head_nav .nav_ul{
+	position:absolute;
+	right:41px;
+	bottom:31px;
+	width:220px;
+	height:343px;
+}
+.head_nav .nav_ul a{
+	width:220px;
+	height:21px;
+	color:#ccc;
+}
+.head_nav a:hover{
+	background-color:#63b504;
+	color:#fff;
+}
+/*头部——文字nav*/
+.head .head_subnav{
+	width:1178px;
+	height:88px;
+	border-radius:3px;
+}
+.head_subnav li{
+	height:82px;
+	padding-top:6px;
+}
+.amu_li{
+	width:79px;
+}
+.movie_li{
+	width:156px;
+}
+.movie_li a{
+	width:42px;
+	margin-left:23px;
+}
+.cartoon_li{
+	width:132px;
+}
+.cartoon_li a{
+	margin-left:25px;
+}
+.qiyi_li{
+	width:217px;
+}
+.qiyi_li a{
+	width:71px;
+	margin-left:25px;
+}
+.info_li{
+	width:198px;
+	padding-left:14px;
+}
+.info_li a{
+	width:71px;
+	margin-left:20px;
+}
+/*内容区域*/
+.content{
+	width:1180px;
+	margin:0 auto;
+}
+/*内容——今日焦点*/
+.focus{
+	height:438px;
+	/*background-color: blue;*/
+}
+/*焦点左边*/
+.focus_i{
+	width:380px;
+	height:438px;
+	/*background-color: tan;*/
+}
+.focus_i_head{
+	width:380px;
+	height:40px;
+	/*background-color: red;*/
+}
+.focus_i_title{
+	margin-top:9px;
+}
+.focus_head_right{
+	width:66px;
+	height:40px;
+	background-position: 0px -1264px;
+}
+.focus_i_top{
+	width:380px;
+	height:55px;
+	border-bottom:1px #ccc dashed;
+	margin-bottom:14px;
+}
+.focus_i_dt{
+	width:380px;
+	height:35px;
+	font-size:18px;
+	text-align:center;
+	color:#000;
+	/*background-color: blue;*/
+}
+.focus_i_dd{
+	width:380px;
+	height:20px;
+	text-align:center;
+	/*background-color: tan;*/
+}
+.focus_i_mid{
+	width:380px;
+	height:144px;
+	/*background-color: red;*/
+	font-size:14px;
+	margin-bottom:17px;
+}
+.focus_i_mid li{
+	width:380px;
+}
+.focus_i_bm{
+	width:380px;
+	height:136px;
+	/*background-color: red;*/
+}
+/*焦点中间*/
+.focus_t{
+	width:380px;
+	height:438px;
+	/*background-color: red;*/
+}
+.focus_top{
+	width:380px;
+	height:252px;
+	/*background-color: blue;*/
+}
+.focus_top .top_bg{
+	position: absolute;
+	left:0px;
+	bottom:0px;
+	width:380px;
+	height:40px;
+	background-color:#000;
+	opacity:0.7;
+}
+.focus_top .top_btn{
+	position: absolute;
+	left:7px;
+	bottom:6px;
+	width:32px;
+	height:27px;
+	background-position: 0px -1224px;
+}
+.focus_top .top_text{
+	position: absolute;
+	bottom:11px;
+	left:51px;
+}
+.focus_bm{
+	width:380px;
+	height:161px;
+	/*background-color: red;*/
+}
+.focus_bm li{
+	width:380px;
+	height:16px;
+	/*background-color: yellowgreen;*/
+	font-size:14px;
+}
+.focus_bm_icon{
+	width:13px;
+	height:13px;
+	*overflow: hidden;
+	background-position: 0px -1251px;
+	margin-right:5px;
+	margin-top:2px;
+}
+/*焦点最右边*/
+.focus_v{
+	width:380px;
+	height:438px;
+	/*background-color: red;*/
+}
+/*内容——综艺*/
+.variety{
+	height:388px;
+	/*background-color: blue;*/
+}
+.vy_left{
+	width:980px;
+	height:388px;
+	/*background-color: red;*/
+}
+.vy_head{
+	width:980px;
+	height:36px;
+}
+.vy_title{
+	width:76px;
+	height:26px;
+	background-position: 0px -1163px;
+}
+.vy_main{
+	width:980px;
+	height:325px;
+	/*background-color: blue;*/
+}
+.vty_right{
+	width:180px;
+	height:388px;
+	/*background-color: red;*/
+}
+.vty_title{
+	width:132px;
+	height:28px;
+	background-position: 0px -1190px;
+}
+.vty_head{
+	width:180px;
+	height:36px;
+	/*background-color: red;*/
+}
+.vty_main{
+	width:180px;
+	height:324px;
+	/*background-color: blue;*/
+}
+.vty_runman{
+	width:156px;
+	height:24px;
+	margin-left:6px;
+	padding-top:13px;
+	padding-left:13px;
+	border-bottom:1px #ccc dashed;
+}
+.vty_main_bottom{
+	width:180px;
+	height:170px;
+	/*background-color: red;*/
+}
+.vty_main_li{
+	height:14px;
+	width:170px;
+	*overflow: hidden;
+	/*background-color: tan;*/
+	margin-bottom:20px;
+	padding-left:10px;
+}
+.vty_main_icon{
+	width:6px;
+	height:6px;
+	*overflow: hidden;
+	background-position: 0px -1218px;
+	margin-top:5px;
+	margin-right:5px;
+}
+/*内容——脱口秀*/
+.talkShow{
+	height:202px;
+	/*background-color: blue;*/
+}
+.talk_head{
+	height: 31px;
+	width: 1180px;
+	/*background-color: red;*/
+	border-bottom:1px solid #e1e1e1;
+}
+.talk_main{
+	height:155px;
+	width:1180px;
+	/*background-color: blue;*/
+}
+/*内容——娱乐*/
+.amusement{
+	height:387px;
+	/*background-color: blue;*/
+}
+.amu_head{
+	width:1180px;
+	height:35px;
+	/*background-color: red;*/
+}
+.amu_title{
+	width: 76px;
+	height: 26px;
+	background-position: 0px -1137px;
+}
+.amu_bad{
+	position: absolute;
+	right:0px;
+	bottom:2px;
+}
+.amu_main{
+	width:1180px;
+	height:325px;
+	/*background-color: blue;*/
+}
+/*内容——猜你喜欢*/
+.mayLike{
+	height:387px;
+	/*background-color: blue;*/
+}
+.mayLike_head{
+	width:1180px;
+	height:35px;
+	/*background-color: red;*/
+}
+.mayLike_title{
+	width:131px;
+	height:26px;
+	background-position: 0px -1097px;
+}
+.mayLike_change{
+	width:63px;
+	height:14px;
+	*overflow: hidden;
+	background-position: 0px -1123px;
+	margin-right:4px;
+	margin-top: 10px;
+}
+.mayLike_main{
+	width:1180px;
+	height:325px;
+	/*background-color: red;*/
+}
+.li_uesr{
+	width:152px;
+	height:90px;
+	padding:65px 13px 0px 15px;
+}
+/*内容——爱频道*/
+.channel{
+	height:237px;
+	/*background-color: blue;*/
+}
+.channel_head{
+	width:1180px;
+	height:35px;
+	/*background-color: red;*/
+}
+.channel_title{
+	width:104px;
+	height:27px;
+	background-position: 0px -1070px;
+}
+.channel_main{
+	width:1180px;
+	height:175px;
+	/*background-color: red;*/
+}
+.channel_main li{
+	width:180px;
+	height:175px;
+}
+.channel_main_pic{
+	position:absolute;
+	left:14px;
+	top:14px;
+}
+.channel_main_name{
+	position:absolute;
+	left:78px;
+	top:20px;
+}
+.channel_main_video{
+	position:absolute;
+	left:78px;
+	top:45px;
+}
+.channel_main_fans{
+	position:absolute;
+	left:78px;
+	top:66px;
+}
+.channel_main_info{
+	position:absolute;
+	left:15px;
+	top:89px;
+}
+.channel_main_add{
+	position:absolute;
+	left:15px;
+	top:132px;
+}
+/*内容——广告*/
+.ad_bottom{
+	width:1184px;
+	height:184px;
+	/*background-color: blue;*/
+}
+/*内容——电影*/
+.movie{
+	height:657px;
+	/*background-color: blue;*/
+}
+.movie_left{
+	width:980px;
+	height:657px;
+	/*background-color: red;*/
+}
+.movie_left_head{
+	width:980px;
+	height:36px;
+	/*background-color: blue;*/
+}
+.movie_left_title{
+	width:76px;
+	height:27px;
+	background-position: 0px -1007px;
+}
+.movie_left_ul{
+	width:980px;
+	height:594px;
+	/*background-color: red;*/
+}
+.movie_left_li{
+	width:180px;
+	height:290px;
+}
+.movie_left_li_pic{
+	width:180px;
+	height:236px;
+}
+.movie_left_li_text{
+	width:180px;
+	height:53px;
+}
+.movie_left_li_title{
+	position:absolute;
+	left:5px;
+	top:12px;
+}
+.movie_left_li_more{
+	position:absolute;
+	left:5px;
+	bottom:8px;
+}
+.movie_left_num{
+	position:absolute;
+	right:5px;
+	top:12px;
+	font-size:14px;
+	color:#ff722c;
+	font-weight:bold;
+}
+.movie_right{
+	width:180px;
+	height:657px;
+	/*background-color: red;*/
+}
+.movie_right_head{
+	width:180px;
+	height:36px;
+	/*background-color: blue;*/
+}
+.movie_right_title{
+	width:104px;
+	height:28px;
+	background-position: 0px -1034px;
+}
+.movie_right_main{
+	width:180px;
+	height:284px;
+	margin-bottom:20px;
+	/*background-color: blue;*/
+}
+.movie_right_main li{
+	width:180px;
+	height:20px;
+}
+.movie_right_main_num{
+	width:20px;
+	height:20px;
+	background-position: 0px -979px;
+}
+.movie_right_main_text{
+	margin-left:5px;
+	margin-top:5px;
+}
+.movie_right_main_info{
+	width:7px;
+	height:8px;
+	*overflow: hidden;
+	background-position: 0px -1062px;
+	margin-top:7px;
+	margin-right:3px;
+}
+.NUM_LINE{
+	width:7px;
+	height:8px;
+	*overflow: hidden;
+	background:url(../img/ol_line.png);
+	margin-top:7px;
+	margin-right:3px;
+}
+/*内容——微电影*/
+.funny{
+	height:184px;
+	/*background-color: blue;*/
+}
+.h2_w{
+	margin-top:4px;
+}
+/*内容——电视剧*/
+.tv{
+	height:620px;
+	/*background-color: blue;*/
+}
+.tv_left{
+	width:980px;
+	height:620px;
+	/*background-color: blue;*/
+}
+.tv_left_head{
+	width:980px;
+	height:36px;
+}
+.tv_left_title{
+	width:102px;
+	height:28px;
+	background-position:0px -923px;
+}
+.tv_left_main{
+	width:980px;
+	height:557px;
+	/*background-color: red;*/
+}
+.tv_left_li{
+	height:271px;
+	width:180px;
+}
+.tv_left_pic{
+	width:180px;
+	height:236px;
+}
+.tv_left_li_text{
+	width:175px;
+	height:22px;
+}
+.tv_right{
+	width:180px;
+	height:620px;
+	/*background-color: blue;*/
+}
+.tv_right_head{
+	width:180px;
+	height:36px;
+	/*background-color: red;*/
+}
+.tv_right_title{
+	width:132px;
+	height:28px;
+	background-position: 0px -951px;
+}
+.tv_right_main{
+	width:180px;
+	height:272px;
+	margin-bottom:14px;
+	/*background-color: blue;*/
+}
+.tv_right_main_li{
+	width:180px;
+	height:20px;
+	/*background-color: tan;*/
+}
+.tv_right_num{
+	width:20px;
+	height:20px;
+}
+.Num_01{
+	background-position: 0px -979px;
+}
+.Num_001{
+	background:url(../img/ol_01.png);
+}
+.Num_02{
+	background:url(../img/ol_02.png);
+}
+.Num_03{
+	background:url(../img/ol_03.png);
+}
+.Num_04{
+	background:url(../img/ol_04.png);
+}
+.Num_05{
+	background:url(../img/ol_05.png);
+}
+.Num_06{
+	background:url(../img/ol_06.png);
+}
+.Num_07{
+	background:url(../img/ol_07.png);
+}
+.Num_08{
+	background:url(../img/ol_08.png);
+}
+.Num_09{
+	background:url(../img/ol_09.png);
+}
+.tv_right_info{
+	width:7px;
+	height:8px;
+	background-position: 0px -999px;
+	margin-top:8px;
+	/*margin-right:4px;*/
+	*overflow: hidden;
+}
+.tv_right_xia{
+	width:7px;
+	height:8px;
+	background:url(../img/ol_xia.png);
+	margin-top:8px;
+	/*margin-right:4px;*/
+	*overflow: hidden;
+}
+.tv_right_line{
+	width:7px;
+	height:8px;
+	background:url(../img/ol_line.png);
+	margin-top:8px;
+	/*margin-right:4px;*/
+	*overflow: hidden;
+}
+/*内容——广告*/
+.ad_bottom{
+	width:1184px;
+	height:184px;
+	/*background-color: red;*/
+}
+.adb_head{
+	width:1184px;
+	height:22px;
+}
+.adb_title{
+	width:84px;
+	height:22px;
+	background-position: 0px -849px;
+}
+.adb_main{
+	width:1182px;
+	height:140px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.adb_main div{
+	width:31px;
+	height:26px;
+	background-position: 0px -871px;
+	margin-top:57px;
+}
+.adb_main .go_back{
+	background-position: 0px -871px;
+}
+.adb_main .go_to{
+	background-position: 0px -897px;
+}
+/*内容——动漫*/
+.cartoon{
+	height:349px;
+	/*background-color: blue;*/
+}
+.cartoon_ct{
+	width:580px;
+	height:349px;
+	/*background-color: red;*/
+}
+.ct_head{
+	width:580px;
+	height:35px;
+	/*background-color: red;*/
+}
+.ct_title{
+	width:76px;
+	height:27px;
+	background-position: 0px -593px;
+}
+.ct_main{
+	width:580px;
+	height:287px;
+	/*background-color: blue;*/
+}
+.ct_main .li_haizen{
+	width:380px;
+	height:252px;
+}
+.haizen_text{
+	height:22px;
+	width:375px;
+}
+.cartoon_cd{
+	width:380px;
+	height:349px;
+	/*background-color: red;*/
+}
+.cd_head{
+	width:380px;
+	height:35px;
+}
+.cd_title{
+	width:76px;
+	height:27px;
+	background-position: 0px -620px;
+}
+.cd_head a{
+	width:43px;
+	height:35px;
+}
+.cd_head .jiqimao{
+	background-position: 0px -647px;
+}
+.cd_head .burenshi{
+	background-position: 0px -682px;
+}
+.cd_head .xiaotuzi{
+	background-position: 0px -717px;
+}
+.cd_head .xiongda{
+	background-position: 0px -752px;
+}
+.cd_head .xiyangyang{
+	background-position: 0px -787px;
+}
+.cartoon_th{
+	width:180px;
+	height:349px;
+	/*background-color: red;*/
+}
+.th_head{
+	width:180px;
+	height:35px;
+	/*background-color: blue;*/
+}
+.th_title{
+	width:76px;
+	height:27px;
+	background-position: 0px -822px;
+}
+.cartoon_th .th_main{
+	width:180px;
+	height:287px;
+	/*background-color: blue;*/
+}
+/*内容——体育  音乐 时尚*/
+.tmf{
+	height:349px;
+	/*background-color: blue;*/
+}
+/*体育*/
+.tmf .sport{
+	width:380px;
+	height:349px;
+	/*background-color: red;*/
+}
+.tmf .sport_head{
+	width:380px;
+	height:35px;
+	/*background-color: blue;*/
+}
+.sport_head .sport_title{
+	width:76px;
+	height:27px;
+	background-position: 0px -539px;
+}
+.sport_main{
+	width:380px;
+	height:287px;
+	/*background-color: tan;*/
+}
+/*音乐*/
+.tmf .music{
+	width:380px;
+	height:349px;
+	/*background-color: red;*/
+}
+.music_head{
+	width:380px;
+	height:35px;
+	/*background-color: tan;*/
+}
+.music_title{
+	width:76px;
+	height:27px;
+	background-position: 0px -566px;
+}
+.shishang_title{
+	width:76px;
+	height:27px;
+	background:url(../img/shishang.png);
+}
+.music_main{
+	width:380px;
+	height:287px;
+	/*background-color: red;*/
+}
+.music_main .music_title_pic{
+	width:180px;
+	height:287px;
+}
+.music_main li .music_pic{
+	width:180px;
+	height:252px;
+}
+.music_main .music_text{
+	width:175px;
+	height:22px;
+	padding-left:5px;
+	padding-top:12px;
+}
+/*内容——母婴  生活  健康*/
+.mlh{
+	height:198px;
+	background-color: blue;
+}
+/*内容——科技  汽车  财经*/
+.ncf{
+	height:198px;
+	background-color: blue;
+}
+/*内容——旅游  纪录片 军事*/
+.vdw{
+	height:198px;
+	/*background-color: blue;*/
+}
+.vdw .V_main{
+	width:380px;
+	height:198px;
+	/*background-color: blue;*/
+}
+.vdw .V_head{
+	width:380px;
+	height:35px;
+	/*background-color: red;*/
+}
+.X_Fun{
+	/*background-color: red;*/
+}
+.vdw .V_head_title{
+	height:26px;
+	width:76px;
+	/*background-position: 0px -512px;*/
+}
+.vdw .V_head_jilu{
+	height:26px;
+	width:104px;
+	/*background-position: 0px -512px;*/
+}
+.muying{
+	background-image: url(../img/muying.png);
+}
+.shenghuo{
+	background-image: url(../img/shenghuo.png);
+}
+.jiankang{
+	background-image: url(../img/jiankang.png);
+}
+.keji{
+	background-image: url(../img/keji.png);
+}
+.qiche{
+	background-image: url(../img/qiche.png);
+}
+.caijing{
+	background-image: url(../img/caijing.png);
+}
+.lvyou{
+	background-image: url(../img/lvyou.png);
+}
+.jilupian{
+	background-image: url(../img/jilupian.png);
+}
+.junshi{
+	background-image: url(../img/junshi.png);
+}
+/*内容——原创*/
+.original{
+	height:387px;
+	/*background-color: blue;*/
+}
+.O_left{
+	width:980px;
+	height:387px;
+	/*background-color: red;*/
+}
+.O_left .left_head{
+	width:980px;
+	height:35px;
+}
+ .O_left .left_head .head_title{
+	width:74px;
+	height:35px;
+	background-position: 0px -336px;
+}
+.O_left ul{
+	width:980px;
+	height:325px;
+	/*background-color: red;*/
+}
+.original .O_people{
+	width:180px;
+	height:386px;
+	/*background-color: red;*/
+}
+.O_people .people_head{
+	width:180px;
+	height:35px;
+	/*background-color: blue;*/
+}
+.O_people .people_title{
+	width:135px;
+	height:35px;
+	background-position: 0px -455px;
+}
+.O_people ul{
+	width:180px;
+	height:322px;
+	border-top:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+	/*background-color: blue;*/
+}
+.O_people ul li{
+	width:180px;
+	height:66px;
+	/*background-color: tan;*/
+}
+.O_people ul li .li_hou{
+	width:96px;
+	margin-top:5px;
+}
+.O_people ul li .li_num{
+	width:96px;
+	margin-top:3px;
+}
+.O_people ul li .li_btn{
+	width:68px;
+	height:22px;
+	background-position: 0px -490px;
+	margin-top:8px;
+	*margin-top:6px;
+}
+/*内容——搞笑*/
+.funny{
+	height:184px;
+	/*background-color: blue;*/
+}
+.funny .funny_left{
+	width:580px;
+	height:183px;
+	/*background-color: red;*/
+}
+.funny .left_head{
+	width:580px;
+	height:32px;
+	/*background-color: red;*/
+}
+.funny_left .a_bg{
+	background-position: 0px -311px;
+	width:14px;
+	height:14px;
+}
+/*内容——游戏视频*/
+.gameVideo{
+	height:218px;
+	/*background-color: blue;*/
+}
+.game_left{
+	width:580px;
+	height:218px;
+	/*background-color: red;*/
+}
+.gameVideo_head{
+	height:36px;
+}
+.gameVideo h2{
+	width:132px;
+	height:36px;
+	background-position: 0px -275px;
+	text-indent:-9999px;
+}
+.game_V{
+	height:155px;
+	/*background-color: red;*/
+}
+.game_V li{
+	width:180
+	height:155px;
+	/*background-color: red;*/
+}
+/*内容——更多频道*/
+.channelmore{
+	height:140px;
+	/*background-color: blue;*/
+}
+.channelmore li{
+	position:relative;
+	height:140px;
+	width:180px;
+}
+.channelmore li .Bm_more{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:174px;
+	height:27px;
+	padding-right:6px;
+}
+.channelmore li .Tp_more{
+	position:absolute;
+	left:0px;
+	bottom:39px;
+	width:175px;
+	height:18px;
+	opacity:0.6;
+	color:#fff;
+	padding-top:6px;
+	*height:17px;
+	*padding-top:7px;
+}
+.channelmore li .Tp_txt{
+	position:absolute;
+	left:5px;
+	bottom:39px;
+	width:175px;
+	height:18px;
+	color:#fff;
+}
+/*内容——华为*/
+.huawei{
+	height:100px;
+	margin-bottom:45px;
+	/*background-color: blue;*/
+}
+/*footer*/
+footer{
+	height:406px;
+	/*background-color: blue;*/
+}
+/*footer——上面左*/
+footer .footer_top{
+	width:1180px;
+	margin:0 auto;
+}
+.footer_top .top_left{
+	height:132px;
+	width:570px;
+}
+.top_left dt span{
+	font-size:12px;
+}
+.top_left dd{
+	width:73px;
+	margin-right:7px;
+	color:#333;
+}
+/*footer——上面右*/
+.footer_top .top_right{
+	height:132px;
+	width:569px;
+	margin-left:-1px;
+}
+.top_right dt span{
+	font-size:12px
+}
+.top_right dd{
+	width:180px;
+}
+/*footer——线*/
+footer .none_line{
+	height:50px;
+}
+/*footer最下面*/
+footer .footer_bottom{
+	width:1180px;
+	height:179px;
+	margin:0 auto;
+	/*background-color: red;*/
+}
+.footer_bottom .bottom_link{
+	width:995px;
+	height:14px;
+	/*background-color: red;*/
+}
+.footer_bottom .bottom_link .li_bg{
+	background:url(../img/link_line.png) right no-repeat;
+	padding-right:11px;
+	margin-right:11px;
+}
+.footer_bottom .bottom_bad{
+	width:815px;
+	height:28px;
+	/*background-color: red;*/
+}
+.footer_bottom .bottom_info{
+	width:1180px;
+	height:79px;
+	margin:0 auto;
+	/*background-color: red;*/
+}
+.footer_bottom .bottom_info .cheng_icon span{
+	width:16px;
+	height:16px;
+	margin-top:6px;
+	background-position: 0px -231px;
+}
+.footer_bottom .bottom_info .jing_icon span{
+	width:14px;
+	height:16px;
+	background-position: 0px -247px;
+	margin:7px 4px 0px 1px;
+}
+.footer_bottom .bottom_info .jubao_icon span{
+	width:14px;
+	height:12px;
+	background-position: 0px -263px;
+	margin:8px 1px 0px 0px;
+}
+.footer_bottom div{
+	width:1180px;
+	height:38px;
+	/*background-color: red;*/
+}

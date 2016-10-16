@@ -1,0 +1,19 @@
+body, h1,dl,dd,h2,h3{
+	margin:0;
+}
+ul,ol,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.resetImg{
+	vertical-align:top;
+	border:none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	border:none;
+	padding:0;
+}
