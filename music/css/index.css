@@ -1,0 +1,412 @@
+body{
+	font-family: arial,"微软雅黑";
+	background: url(../img/bg.jpg) 0 0 no-repeat;
+}
+.head,.main{
+	width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.head{
+	height: 102px;
+	padding-top: 9px;
+}
+.head .title{
+	font: 46px/76px "微软雅黑";
+	text-align: center;
+	color: #fff;
+}
+.main-top{
+	text-align: center;
+	height: 60px;
+	padding-top: 10px;
+}
+.main .nav{
+	display: inline-block;
+}
+.main .nav .item{
+	float: left;
+	font: 16px/26px "微软雅黑";
+	margin-right: 69px;
+	color: #999999;
+	cursor: pointer;
+}
+.main .nav .item.check,
+.main .nav .item:hover{
+	color: #fff;
+}
+.main .nav .item:last-child{
+	margin-right: 0;
+}
+.main-middle{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 408px;
+}
+.main .special-list{
+	height: 408px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+}
+.main .special-list .item{
+	width: 300px;
+	float: left;
+	margin-right: 50px;
+	margin-left: 50px;
+	cursor: pointer;
+}
+.special-list .item .pic-box{
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+.special-list .item .info{
+	height: 78px;
+	padding-top: 30px;
+	background-color: rgba(0,0,0,.7);
+}
+.special-list .item .info-name,
+.special-list .item .info-singer{
+	height: 26px;
+	font: 16px/26px "微软雅黑";
+	color: #fff;
+	text-align: center;
+}
+.special-list .item .info-singer{
+	color: #999999;
+}
+.special-list .item .mask{
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.special-list .ico{
+	background-position: 0 -265px;
+	width: 70px;
+	height: 70px;
+	transition: .5s;
+	-webkit-transition: .5s;
+	transform: scale(.5);
+	-webkit-transform: scale(.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: 0;
+	z-index: 20;
+}
+.special-list .pic-box .img{
+	transition: .5s;
+	-webkit-transition: .5s;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.special-list .item:hover{
+	box-shadow: 0 0 10px 2px #c1e9d5;
+}
+.special-list .item:hover .info{
+	background-color: #31c27c;
+}
+.special-list .item .pic-box:hover .mask{
+	background-color: rgba(0,0,0,.3);
+}
+.special-list .pic-box:hover .img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.special-list .pic-box:hover .ico{
+	opacity: 1;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.main-bottom{
+	width: 1200px;
+	text-align: center;
+}
+.main-bottom .ico-list{
+	display: inline-block;
+	font-size: 40px;
+}
+.main-bottom .ico-list .item{
+	display: inline-block;
+	width: 50px;
+	height: 10px;
+	cursor: pointer;
+}
+.main-bottom .ico-list .item .line{
+	height: 1px;
+	background-color: #6a6a6a;
+	display: block;
+}
+.main-bottom .ico-list .item.check .line{
+	background-color: #fff;
+}
+.main-bottom .ico-list .item:last-child{
+	margin-right: 0;
+}
+.prev,.next{
+	height: 108px;
+	width: 0;
+	transition: 1s;
+	background-color: rgba(255,255,255,.3);
+	position: absolute;
+	font:bold 30px/108px "宋体";
+	text-align: center;
+	color: #fff;
+	top: 255px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.prev{
+	left: 0;
+}
+.next{
+	right: 0;
+}
+.prev.show,.next.show{
+	width: 72px;
+}
+.prev.check,.next.check{
+	width: 80px;
+	background-color: #31c27c;
+}
+/* 专辑列表弹出层  */
+.special{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*height: 100%;*/
+	z-index: 2000;
+	background: linear-gradient(rgb(235,235,235) 0,#fff 260px) 0 0 no-repeat;
+	height: 0;
+	overflow: hidden;
+}
+.special .center{
+	/*background: #fff;*/
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.top-info{
+	padding-top: 40px;
+	height: 286px;
+}
+.top-info .left-pic{
+	width: 250px;
+	height: 250px;
+	float: left;
+	position: relative;
+	margin-right: 90px;
+}
+.top-info .left-pic .bg-cd{
+	width: 300px;
+	height: 260px;
+	margin-bottom: 40px;
+	background-position: 0 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.top-info .left-pic .img{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.top-info .right-info{
+	float: left;
+	padding-top: 13px;
+}
+.top-info .right-info .special-title{
+	height: 46px;
+	font-size: 26px;
+	line-height: 46px;
+	font-weight: 400;
+	color: #333333;
+}
+.top-info .right-info .singer{
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	padding-left: 24px;
+	position: relative;
+	margin-bottom: 5px;
+}
+.top-info .right-info .singer:before{
+	content: '';
+	background: url(../img/ico.png) 0 -342px no-repeat;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 7px;
+}
+.top-info .data-list{
+	width: 550px;
+	overflow: hidden;
+}
+.top-info .data-list .data-item{
+	float: left;
+	height: 27px;
+	line-height: 27px;
+	font-size: 12px;
+	width: 200px;
+}
+.top-info .data-list .data-item:nth-child(2n-1){
+	margin-right: 30px;
+}
+.right-info .btn-list{
+	margin-top: 11px;
+}
+.right-info .btn-list .btn{
+	width: 123px;
+	height: 40px;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 40px;
+	background-color: #31c27c;
+	cursor: pointer;
+}
+.right-info .btn-list .btn:hover{
+	background-color: #2caf6f;
+}
+.bottom-list .list-title{
+	height: 50px;
+	background-color: #fbfbfd;
+	font-size: 14px;
+	line-height: 50px;
+	padding-left: 46px;
+	color: #999;
+}
+.bottom-list .list-title .item{
+	float: left;
+}
+.bottom-list .list-title .item:first-child{
+	width: 646px;
+}
+.bottom-list .list-title .item:nth-of-type(2){
+	width: 346px;
+}
+.song-list{
+	padding-bottom: 30px;
+}
+.song-list .song{
+	height: 50px;
+	color: #333;
+	line-height: 50px;
+	font-size: 14px;
+	color: #333;
+	position: relative;
+}
+.song-list .song:nth-of-type(2n){
+	background-color: #fbfbfd;
+}
+.song-list .song:nth-of-type(2n-1){
+	background-color: #fff;
+}
+.song-list .song .num{
+	width: 36px;
+	padding-left: 10px;
+	float: left;
+}
+.song-list .song .song-name{
+	width: 646px;
+}
+.song-list .song .singer-name{
+	width: 346px;
+}
+.song-list a:hover{
+	color: #31c27c;
+}
+.song-list .fun{
+	width: 100px;
+	height: 36px;
+	position: absolute;
+	left: 398px;
+	top: 7px;
+	display: none;
+}
+.song:hover .fun{
+	display: block;
+}
+.song-list .fun .play,
+.song-list .fun .add{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 1px solid #cbcbcb;
+	position: relative;
+	cursor: pointer;
+}
+.song-list .fun .play:hover,
+.song-list .fun .add:hover{
+	border-color: #51cc91;
+}
+.song-list .fun .play .ico,
+.song-list .fun .add .ico{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.song-list .fun .play .ico{
+	background-position: -17px -363px;
+	left: 13px;
+}
+.song-list .fun .add .ico{
+	background-position: 0px -386px;
+}
+.song-list .fun .play:hover .ico{
+	background-position: 0px -363px;
+}
+.song-list .fun .add:hover .ico{
+	background-position: -19px -386px;
+}
+.hide{
+	margin-bottom: 30px;
+	background-color: rgba(49,194,124,.5);
+	height: 60px;
+	text-align: center;
+	font: 18px/60px "微软雅黑";
+	color: #fff;
+	cursor: pointer;
+	letter-spacing: 4px;
+}
+.hide:hover{
+	background-color: rgba(49,194,124,.8);
+}
+.tip{
+	width: 200px;
+	height: 100px;
+	background-color: rgba(0,0,0,.7);
+	color: #fff;
+	font: 18px/100px "微软雅黑";
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+}
+.tip.show{
+	display: block;
+}

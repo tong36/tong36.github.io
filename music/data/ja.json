@@ -1,0 +1,78 @@
+[
+	{
+		"name": "아이돌보컬리그 - 걸스피릿 EPISODE 10",
+		"thumb": "http://y.gtimg.cn/music/photo_new/T002R300x300M0000005D7p805aUrD.jpg?max_age=2592000",
+		"singer": "걸스피릿 (Girl Spirit)",
+		"info": {
+			"genre": "K-Pop 韩国流行",
+			"language": "韩语 英语",
+			"publishTime": "2016-09-21",
+			"company": "Interpark. Co., Ltd.",
+			"type": "EP"
+		},
+		"list": [
+			{
+				"songname": "친구 (朋友)",
+				"singername": "김보형 (金保亨)",
+				"duration":	"04:32",
+				"src": "http://cc.stream.qqmusic.qq.com/C200000hPkct3oxNNA.m4a?vkey=9EC94ABB1F2A600424A33EC9188C56308C7F295B8590A58F4AC39CD54ECF35F1591A510AD6AA041C4B3CC84C30679D8D23BFEC91019E6F75&guid=2923641705&fromtag=30"
+			},
+			{
+				"songname": "길 (路)",
+				"singername": "유지 (郑宥智)",
+				"duration":	"04:24",
+				"src": "http://ws.stream.qqmusic.qq.com/C200001TtyX11h4A5N.m4a?vkey=0E15A036B3B0A9F8D84E7D7607AE5DB781DDAC8E85E055ECEBAC35A743D9813EE6E477EE68DD8D17BEDCAE4F032682399C5E6210012BE896&guid=2923641705&fromtag=30"
+			},
+			{
+				"songname": "A Moment Like This",
+				"singername": "소연 (昭娟)",
+				"duration":	"03:55",
+				"src": "http://cc.stream.qqmusic.qq.com/C200000ZHeAz0wthIR.m4a?vkey=9EC94ABB1F2A600424A33EC9188C56308C7F295B8590A58F4AC39CD54ECF35F1591A510AD6AA041C4B3CC84C30679D8D23BFEC91019E6F75&guid=2923641705&fromtag=30"
+			}
+		]
+	},
+	{
+		"name": "daydream",
+		"thumb": "http://y.gtimg.cn/music/photo_new/T002R300x300M000002wS9tA16g5iu.jpg?max_age=2592000",
+		"singer": "Aimer (エメ)",
+		"info": {
+			"genre": "J-Pop 日本流行",
+			"language": "日语",
+			"publishTime": "2016-09-21",
+			"company": "索尼音乐",
+			"type": "录音室专辑"
+		},
+		"list": [
+			{
+				"songname": "insane dream",
+				"singername": "Aimer (エメ)",
+				"duration":	"04:13",
+				"src": "http://thirdparty.gtimg.com/C2000008toa72Pun1M.m4a?vkey=ACB51F04F226FA4B14B1F0B1ED1ED74911A32544A53B62482D26AFB8C2B2BEB0D65C65F4F7BE0E1129AB7A5A474DAD72857094DCD66E5973&guid=2923641705&fromtag=30"
+			},
+			{
+				"songname": "ninelie",
+				"singername": "Aimer (エメ)",
+				"duration":	"04:21",
+				"src": "http://thirdparty.gtimg.com/C2000031gZGI1nOkY6.m4a?vkey=ACB51F04F226FA4B14B1F0B1ED1ED74911A32544A53B62482D26AFB8C2B2BEB0D65C65F4F7BE0E1129AB7A5A474DAD72857094DCD66E5973&guid=2923641705&fromtag=30"
+			},
+			{
+				"songname": "twoface",
+				"singername": "Aimer (エメ)",
+				"duration":	"03:05",
+				"src": "http://thirdparty.gtimg.com/C2000027kCRr0SruXR.m4a?vkey=ACB51F04F226FA4B14B1F0B1ED1ED74911A32544A53B62482D26AFB8C2B2BEB0D65C65F4F7BE0E1129AB7A5A474DAD72857094DCD66E5973&guid=2923641705&fromtag=30"
+			},
+			{
+				"songname": "Higher Ground",
+				"singername": "Aimer (エメ)",
+				"duration":	"05:14",
+				"src": "http://thirdparty.gtimg.com/C200000JwWTs3e9TuI.m4a?vkey=ACB51F04F226FA4B14B1F0B1ED1ED74911A32544A53B62482D26AFB8C2B2BEB0D65C65F4F7BE0E1129AB7A5A474DAD72857094DCD66E5973&guid=2923641705&fromtag=30"
+			},
+			{
+				"songname": "for ロンリー (致孤独)",
+				"singername": "Aimer (エメ)",
+				"duration":	"04:51",
+				"src": "http://thirdparty.gtimg.com/C200002cNSZm3UYpG5.m4a?vkey=ACB51F04F226FA4B14B1F0B1ED1ED74911A32544A53B62482D26AFB8C2B2BEB0D65C65F4F7BE0E1129AB7A5A474DAD72857094DCD66E5973&guid=2923641705&fromtag=30"
+			}
+		]
+	}
+]
