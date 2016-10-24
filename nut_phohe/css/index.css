@@ -1,0 +1,214 @@
+body,ul,h1,h3{
+	margin: 0;
+}
+body{
+	font-family: "PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","微软雅黑",sans-serif;
+	font-size: 14px;
+	height: 3333px;
+	overflow: hidden;
+}
+ul{
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+.clearfix:after{
+	clear: both;
+	display: block;
+	content: '';
+}
+
+/* -- Nav区域 -- */
+
+.header-main{
+	height: 100px;
+	background: url(../img/header-main-bj.png) repeat-x;
+}
+.container{
+	width: 1120px;
+	margin: 0 auto;
+}
+.container .logo{
+	float: left;
+    padding: 25px 0 0 0;
+}
+.container .logo a{
+	display: block;
+    margin-left: -5px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    text-indent: -9999px;
+    background: url(../img/logo.png) no-repeat;
+}
+.container .nav{
+	float: right;
+	line-height: 25px;
+	padding-top: 36px;
+	padding-right: 40px;
+}
+.container .nav li{
+	float: left;
+	margin-right: 40px;
+}
+.container .nav li a{
+	color: #bdbdbd;
+}
+
+/* -- 面包屑导航 -- */
+.header-sub{
+	border:1px solid #e5e5e5; 
+}
+.breadcrumb{
+	float: left;
+	line-height: 28px;
+}
+.breadcrumb li{
+	float: left;
+}
+.breadcrumb li a{
+	margin-right: 20px;
+	color: #bdbdbd;
+	font-size: 12px;
+}
+.header-sub .now-buy{
+	margin-top: 2px;
+	float: right;
+	width: 96px;
+	height: 26px;
+	border-color: #5680e8;
+    font-size: 12px;
+    background: #5b85e9;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 3px;
+}
+.header-sub .now-buy a{
+	color: #fff;
+}
+.content-wrap{
+	overflow: hidden;
+}
+.one-content{
+	position: relative;
+}
+.banner-text{
+	transform: scale(1);
+	-moz-transform: scale(1);
+	-moz-transition: 0.6s;
+	transition: 0.6s;
+	padding-top: 100px;
+}
+.banner-text h3{
+	width: 388px;
+	height: 56px;
+	background: url(../img/banner.png) no-repeat;
+	text-indent: -9999px;
+	margin: 0 auto;
+	position: relative;
+	z-index :10;
+}
+.banner-text .link{
+	width: 140px;
+	margin: 20px auto;
+	position: relative;
+	z-index: 10; 
+}
+.banner-text .link a{
+	color: #757575;
+	margin-right: 10px;
+}
+#oUl {
+	width:100%;
+	position: absolute;
+	transition: transform .4s cubic-bezier(.445,.05,.55,.95);
+	overflow:hidden;
+}
+#oUl li {
+	float: left;
+	width: 13.8%; 
+	position: relative;
+	transition: transform .4s cubic-bezier(.445,.05,.55,.95);
+	will-change: transform;
+}
+	#oUl li img{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	will-change: transform;
+	-webkit-transition: transform .3s cubic-bezier(0,.68,.86,.98);
+	transition: transform .3s cubic-bezier(0,.68,.86,.98);
+	cursor: pointer;
+	background-size:contain;
+	background-repeat:  no-repeat;
+}
+
+
+#oUl li:nth-child(1) img{
+	-webkit-transform: translate3d( 0px,63%,0px);
+	-moz-transform: translate3d( 0px,63%,0px);
+}
+#oUl li:nth-child(2) img{
+	-webkit-transform: translate3d( 0px,47%,0px);
+	-moz-transform: translate3d( 0px,47%,0px);
+}
+#oUl li:nth-child(3) img{
+	-webkit-transform: translate3d( 0px,67%,0px);
+	-moz-transform: translate3d( 0px,67%,0px);
+}
+#oUl li:nth-child(4) img{
+	-webkit-transform: translate3d( 0px,47%,0px);
+	-moz-transform: translate3d( 0px,47%,0px);
+}
+#oUl li:nth-child(5) img{
+	-webkit-transform: translate3d( 0px,27%,0px);
+	-moz-transform: translate3d( 0px,27%,0px);
+}
+#oUl li:nth-child(6) img{
+	-webkit-transform: translate3d( 0px,47%,0px);
+	-moz-transform: translate3d( 0px,47%,0px);
+}
+#oUl li:nth-child(7) img{
+	-webkit-transform: translate3d( 0px,61%,0px);
+	-moz-transform: translate3d( 0px,61%,0px);
+}
+
+.ul-wrap{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+#oUl li.prev{
+	transform: translate3d(-13%,0,0);
+}
+#oUl li.next{
+	transform: translate3d(13%,0,0);
+}
+#abc li:nth-child(n) img{
+	transform:translate3d(0,25%,0);;
+}
+#abc ul li.lager img{
+	transform:translate3d(0,15%,0);;
+}
+.fadeInUp{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.active{
+	    transition: all .6s cubic-bezier(.165,.84,.44,1) .6s;
+/*给的是下面的div*/
+}
+
+.shiyan{
+	width: 100%;
+	height: 666px;
+	background: blue;
+}
