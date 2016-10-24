@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/tween.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default text-center">
+		  <div class="container-fluid">
+		    <div>
+		      <a class="navbar-brand" href="book.douban.com">
+		      	<img src="img/lg_book.png" id="sub-title"/>
+		      </a>
+		    </div>
+		    <div id="bs-example-navbar-collapse-1">
+		      <form class="navbar-form navbar-left search" role="search" >
+		        <div class="form-group">
+		          <input type="text" name="text" class="form-control" placeholder="请输入搜索内容">
+		        </div>
+		        <button type="submit" class="btn btn-default" id="submit">
+		        	<span class="glyphicon glyphicon-search"></span>
+		        </button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container box">
+			<div class="top clearfix">
+				<nav class="pageNav topNav">
+				  <!--<ul class="pagination pagination-lg">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>-->
+				</nav>
+				<p class="bg-success"><!--搜索结果：一共<i>123</i>条数据，<i>20</i>条/页，共<i>23</i>页，当前第<i>2 </i>页--></p>
+			</div>
+			
+			<div class="content"></div>
+			<!--<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <img class="media-object" src="..." alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading">生命最完美之美</h4>
+			    <p>
+			    	我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+			    </p>
+			  </div>
+			</div>-->
+			<nav class="pageNav"></nav>
+		</div>
+		<div id="tip">
+			<span>回到顶部</span>
+		</div>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

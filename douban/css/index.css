@@ -1,0 +1,72 @@
+
+body{
+	background: linear-gradient(#fff 0,#f8f8f8 400px) 0 0 no-repeat;
+}
+.display{
+	display: inline-block;
+}
+.row{
+	margin-top: 20px;
+}
+.fr{
+	float: right;
+}
+.title{
+	font-size: 22px;
+	font-family: arial,"微软雅黑";
+	color: orangered;
+}
+#tip{
+	color: #fff;
+	height: 40px;
+	font: 18px/40px "微软雅黑";
+	transform: scale(1);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: fixed;
+	left: 10px;
+	top: 300px;
+	z-index: 2000;
+	opacity: 0;
+}
+#tip span{
+	width: 80px;
+	padding: 20px;
+	display: block;
+	background-color: #F15959;
+	border-color: red;
+	margin-bottom: 2px;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+}
+p{
+	text-indent: 2em;
+	line-height: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.col-md-4.hover{
+	box-shadow:inset 0 0 10px blueviolet;
+	padding-top: 10px;
+	border-radius: 10px;
+}
+.col-md-4.hover .info{
+	display: block;
+}
+.info{
+	display: none;
+}
+.col-md-4{
+	transition: 500ms;
+	height: 500px;
+	overflow: hidden;
+}
+.thumbnail{
+	height: 490px;
+}
+.col-md-4 img{
+	width: 200px;
+	height: 380px;
+	transition: 1s;
+}
