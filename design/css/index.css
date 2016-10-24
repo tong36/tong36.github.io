@@ -1,0 +1,363 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:normal}
+html,body,fieldset,img,iframe,abbr{border:0}
+i,cite,em,var,address,dfn{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%}
+sup,sub{font-size:83%}
+pre,code,kbd,samp{font-family:inherit}
+q:before{content:none}
+q:after{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,a:hover,button{cursor:pointer}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold}
+img{ vertical-align:middle;}
+del,ins,u,s,a,a:hover,a:hover{text-decoration:none}
+body,textarea,input,button,select,keygen,legend{font:14px/1.14 arial,\5b8b\4f53;;color:#333;outline:0}
+body{background:#fff}
+a{color:#515151;}
+a:hover{ color:#333;}
+
+.clearfix{ *zoom:1;}
+.clearfix:after{ content:""; display:block; clear:both;}
+
+/* 滚动条 */
+::-webkit-scrollbar{ width:10px; background-color:#F5F5F5; border-radius:10px; }
+::-webkit-scrollbar-thumb{ width:100%; min-height: 10px; background-color:#616160; border-radius:10px; }
+::-webkit-scrollbar-track{ border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); }
+
+/* common */
+html,body{ width:100%; height:100%; }
+.slide{ width:100%; height:100%; position:relative; z-index:3; overflow:hidden;}
+
+.container{ width:1200px; padding-top:3%; margin:0 auto; color:#fff;}
+.container p{ line-height:20px;}
+.container a{ font-size:14px; color:#fff;}
+
+.personFixed{ position:absolute; top:0; left:50%; z-index:2; margin-left:180px; width:270px; height:352px; background:url(../images/midlle1_sprite.png) no-repeat; -webkit-animation:move2 2s steps(15) infinite; animation:move2 2s steps(15) infinite;}
+
+/* 第一部分 */
+.slide1{ background:url(../images/home_bg.jpg) repeat;}
+.slide1 .hill,.slide1 .container>span,.slide1 .text{ position:absolute; left:50%;}
+.slide1 .hill{ top:0; bottom:0; left:0; right:0; margin:auto;}
+.slide1 span.cloud1{ top:40%; margin-left:-600px; width:140px; height:90px; background:url(../images/cloud.png) no-repeat;}
+.slide1 span.cloud2{ top:33%; margin-left:-280px; width:110px; height:67px; background:url(../images/cloud2.png) no-repeat;}
+.slide1 span.cloud3{ top:50%; margin-left:-50px; width:110px; height:74px; background:url(../images/cloud3.png) no-repeat;}
+.slide1 span.person{ top:34%; margin-left:-520px; width:476px; height:373px; background:url(../images/sp2.png) no-repeat; animation:move1 2s steps(15) infinite;}
+.slide1 .text{ position:absolute; top:30%; width:40%; text-align:center; z-index:99;}
+.slide1 .text h2{ font-size:24px; text-transform:uppercase;}
+.slide1 .text h1{font-size: 90px; text-transform: uppercase; font-weight: 700; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);}
+.slide1 .text p{ width:80%; margin:0 auto; text-align:center;}
+.slide1 .text p:first-of-type{ font-size:12px;}
+.slide1 .text p:first-of-type span{ padding:6px;}
+.slide1 .text a{ display: inline-block; margin-top: 20px; padding: 8px 18px; border: 2px solid;text-transform:uppercase;}
+.slide1 .text a:hover{ background: #942f86;}
+
+@-webkit-keyframes move1{
+	from{background-position:0 0;}
+	to{ background-position:-7140px 0;}
+}
+@keyframes move1{
+	from{background-position:0 0;}
+	to{ background-position:-7140px 0;}
+}
+/* 第二部分 */
+.slide2{ background:url(../images/med_bg.jpg) repeat; z-index:1;}
+.slide2 .list{ position:absolute; top:50%; left:50%; margin-left:-460px; transform:translateY(-50%);}
+.slide2 .list li{ padding-bottom:60px; overflow:hidden; position:relative;}
+.slide2 .list li:after{ content:''; position:absolute; top:110px; right:95px; width:0; height:0; border-left:1px dashed #5e4d5c; transition:height 1s;}
+.slide2 .list li:last-of-type{ padding-bottom:0; }
+.slide2 .list li:last-of-type:after{ display:none;}
+.slide2 .list span{ float:left; width:60px; height:60px; color:#fff; display:inline; margin-right:30px; font:14px/60px "微软雅黑"; text-align:center; background:#5e4d5c; border-radius:100%; -webkit-transform:scale(0); transform:scale(0); transition:.2s;}
+.slide2 .list .txt{ float:left; width:210px; text-align:center; text-transform:uppercase;}
+.slide2 .list .txt p:first-child{ padding-bottom:12px; font-size:18px; color:#5e4d5c;opacity:0;}
+.slide2 .list .txt p:last-child{ font-size:14px; color:#fff; opacity:0;}
+
+.slide2 .list li.on span{ -webkit-transform:scale(1); transform:scale(1);}
+.slide2 .list li.on p:first-child{
+	-webkit-animation-duration:500ms;
+	animation-duration: 500ms;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-delay:200ms;
+	animation-delay:200ms;
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;}
+.slide2 .list li.on p:last-child{
+	-webkit-animation-duration:300ms;
+	animation-duration: 300ms;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-delay:500ms;
+	animation-delay:500ms;
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+.slide2 .list li.on:after{ height:55px; transition-delay:800ms;}
+
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes move2{
+	from{background-position:0 0;}
+	to{ background-position:-4050px 0;}
+}
+
+@keyframes move2{
+	from{background-position:0 0;}
+	to{ background-position:-4050px 0;}
+}
+
+/* 第三部分 */
+.slide3{background:url(../images/about_bg.jpg) repeat center;}
+
+.slide3 .seesaw{ position:absolute; top:50%; left:50%; z-index:4; margin-top:-120px; margin-left:-500px; width:1100px; color:#fff;}
+.slide3 .seesaw h2{ font-size:24px; font-weight:normal; text-transform:uppercase;}
+.slide3 .seesaw h3{ margin:10px 0 15px; font-weight:normal; text-transform:uppercase;}
+.slide3 .seesaw p{ margin-bottom:20px; line-height:20px; text-align:justify;}
+.slide3 .seesaw ul{ font-size:0;}
+.slide3 .seesaw li{ display:inline-block; width:40px; height:40px; margin-right:12px; border:3px solid #fff; border-radius:100%; text-align:center; font-size:12px; line-height:40px; text-transform:uppercase;}
+.slide3 .seesaw div[class^="infor"]{ width:410px; position:relative;}
+.slide3 .seesaw .inforL{ float:left; opacity:1;}
+.slide3 .seesaw .inforR{ float:right; opacity:0;}
+.slide3 .seesawImg{ position: absolute; bottom:35px; left:50%; z-index:3; margin-left:-225px; width:430px; height:456px; background:url(../images/meet_sprite.png) no-repeat; cursor:pointer;}
+.slide3 .seesawImg span[class^="click"]{ -webkit-transform:translateY(-6px); transform:translateY(-6px); -webkit-animation:clickMove 1s linear infinite alternate; animation:clickMove 1s linear infinite alternate; transition:opacity 500ms}
+.slide3 .seesawImg .clickR{ position:absolute; bottom:60px; right:-70px; width:125px; height:132px; background:url(../images/click_bojan.png) no-repeat; opacity:1;}
+.slide3 .seesawImg .clickL{ position:absolute; bottom:30px; left:-90px; width:184px; height:104px; background:url(../images/click_marta.png) no-repeat; opacity:0;}
+
+.slide3 .seesaw.toggle .inforL{ opacity:0;}
+.slide3 .seesaw.toggle .inforR{ opacity:1;}
+.slide3 .seesawImg.click .clickR{ opacity:0;}
+.slide3 .seesawImg.click .clickL{ opacity:1;}
+.slide3 .bg{ position:absolute; bottom:0; left:0; right:0; width:100%; height:83px; background:url(../images/meet_us_cont_bg.png) no-repeat center bottom;}
+
+
+.seesawImg.click{-webkit-animation:seesaw 1s steps(17) forwards; animation:seesaw 1s steps(17) forwards;}
+.seesawImg.click2{-webkit-animation:seesaw2 1s steps(17) forwards; animation:seesaw2 1s steps(17) forwards;}
+
+
+.fadeInUp{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30%, 0);
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes clickMove{
+	from{ transform:translateY(-6px);}
+	to{ transform:translateY(6px);}
+}
+
+@keyframes clickMove{
+	from{ transform:translateY(-6px);}
+	to{ transform:translateY(6px);}
+}
+@-webkit-keyframes seesaw{
+	from{ background-position:0 0;}
+	to{ background-position:-7310px 0;}
+}
+@keyframes seesaw{
+	from{ background-position:0 0;}
+	to{ background-position:-7310px 0;}
+}
+@-webkit-keyframes seesaw2{
+	from{ background-position:-7310px 0;}
+	to{ background-position:0 0;}
+}
+@keyframes seesaw2{
+	from{ background-position:-7310px 0;}
+	to{ background-position:0 0;}
+}
+
+/* 第四部分 */
+.slide4{ background:url(../images/work_bg.jpg) repeat;}
+.slide4 .skill{ width:1200px; margin:0 auto; padding:40px 0 60px;}
+.slide4 .skill li{ float:left; width:18%; padding:1%; text-align:center; position:relative; opacity:0; transition:500ms;}
+.slide4 .skill li:after{ content:''; position:absolute; bottom:0; left:0; right:0; width:34px; height:3px; margin:auto; background:#fff;}
+.slide4 .skill li:hover{ -webkit-transform:translateY(-10px); transform:translateY(-10px);}
+.slide4 .skill li.fadeIn{
+	-webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name:fadeIn;
+  animation-name: fadeIn;
+  }
+.slide4 .skill li h3{ margin:20px 0 10px; font-size:20px; font-weight:normal; color:#fff; text-transform:uppercase;}
+.slide4 .skill li p{ height:50px; line-height:20px;}
+	/* 作品集 */
+.worksWrap{}
+.worksWrap>h3{padding:30px 0; color:#fff; font-size:24px; font-weight:normal; text-align:center; text-transform:uppercase;}
+.worksWrap .works{ color:#fff;}
+.worksWrap .worksList{ padding:30px 0; text-align:center; font-size:0;}
+.worksWrap .worksList a{ margin:0 15px; font-size:14px;color:#fff; text-transform:uppercase; position:relative;}
+.worksWrap .worksList a:after{ content:''; position:absolute; bottom:-5px; left:0; right:0; height:2px; background:#fff; transition:.5s; -webkit-transform:scale(0,1); transform:scale(0,1);}
+.worksWrap .worksList a.active:after,.worksWrap .worksList a:hover:after{ -webkit-transform:scale(1,1); transform:scale(1,1);}
+.worksWrap .worksBox{ width:92%; height:260px; margin:0 auto; overflow:hidden; position:relative;}
+.worksWrap .worksBox ul{ position:absolute; top:0; left:0; width:500%;}
+.worksWrap .worksBox li{ float:left; width:320px; height:200px; margin-right:5px; overflow:hidden; background:#ccc; position:relative;}
+.worksWrap .worksBox li>a{ position:absolute; top:0; left:0; width:100%; height:100%; z-index:2; background:transparent;}
+.worksWrap .worksBox li img{ width:100%; height:100%; transition:.5s;}
+.worksWrap .worksBox .txt{position:absolute; top:0;left:0; width:100%; height:100%; background:rgba(0,0,0,.5); opacity:0; transition:opacity .2s;}
+.worksWrap .worksBox .txt p{ padding:20px; font-size:16px; line-height:24px; color:#fff;}
+.worksWrap .worksBox .txt a{ position:absolute; top:0; right:0; bottom:0; left:0; z-index:3; margin:auto; width:32px; height:34px; background:url(../images/zoomico.png) no-repeat; transition:.5s;}
+.worksWrap .worksBox .txt a:hover{ background-position:0 -36px;}
+.worksWrap .worksBox li:hover img{ transform:scale(1.5) rotate(20deg);}
+.worksWrap .worksBox li:hover .txt{ opacity:1;}
+.worksWrap .scroll{ opacity:0; position:absolute; bottom:10px; left:0; right:0; height:2px; background:#d7d127; transition:.5s;}
+.worksWrap .scroll span{ position:absolute; left:0; top:0; bottom:0; margin:auto; height:10px; width:100px; background:#bdb70a; cursor:pointer;}
+.worksWrap .scroll span:hover{ background:#d4cd06;}
+.worksWrap .worksBox:hover .scroll{ opacity:1;}
+@-webkit-keyframes fadeIn{
+	from{opacity:0;}
+	to{opacity: 1;}
+}
+@keyframes fadeIn{
+	from{opacity:0;}
+	to{opacity: 1;}
+}
+
+/* 第五部分 */
+.slide5{ background:url(../images/contact_bg.jpg) repeat;}
+.slide5 .sky{ position:absolute; top:0; right:0; bottom:0; left:0; margin:5% auto auto;}
+.slide5 .person{ position:absolute; top:20%; left:50%; z-index:2; margin-left:-50px; width:343px; height:494px; background:url(../images/contact_sprite.png) no-repeat; -webkit-animation:move3 1s steps(15) infinite; animation:move3 2s steps(15) infinite;}
+.slide5 .text{ position:absolute; top:25%; left:50%; z-index:2; margin-left:-28%; width:20%;}
+.slide5 .text h2{ font-size:24px; font-weight:normal; text-transform:uppercase;}
+.slide5 .text p{ margin:20px 0; line-height:20px; text-align:justify;}
+.slide5 .text a{ float:right; display:inline-block; padding:8px 18px; border:2px solid #fff; text-transform:uppercase;}
+.slide5 .text a:hover{ background: #942f86;}
+	/* star */
+.slide5 .star{ position:absolute; left:50%; opacity:.8;}
+.slide5 .star1{ top:15%; margin-left:-600px; width:517px; height:308px; background:url(../images/bling_star1.png) no-repeat; background-size:50%; animation:star 2s linear -1s infinite alternate;}
+.slide5 .star2{ bottom:10%; margin-left:300px; width:479px; height:333px; background:url(../images/bling_star2.png) no-repeat; background-size:50%; animation:star 3s linear -2s infinite alternate;}
+.slide5 .star3{ top:20%; margin-left:800px;}
+.slide5 .star4{ bottom:5%; margin-left:-460px; width:479px; height:333px; background:url(../images/bling_star2.png) no-repeat; background-size:50%; animation:star 3s linear -2s infinite alternate;}
+
+@-webkit-keyframes star{
+	from{opacity:.8;}
+	to{opacity:.2;}
+}
+
+@keyframes star{
+	from{opacity:.8;}
+	to{opacity:.2;}
+}
+	/* lx */
+.slide5 .lx img{ position:absolute; -webkit-transform-origin:left;}
+.slide5 .lx img:nth-of-type(1){ right:0px; top:400px; height:20px; -webkit-animation:4s -3s infinite liuxing linear; animation:3s infinite liuxing linear;}
+.slide5 .lx img:nth-of-type(2){ right:300px; top:200px; height:10px; -webkit-animation:5s infinite liuxing linear; animation:5s infinite liuxing linear;}
+.slide5 .lx img:nth-of-type(3){ right:800px; top:300px; height:5px; -webkit-animation:2s -2s infinite liuxing linear; animation:2s infinite liuxing linear;}
+.slide5 .lx img:nth-of-type(4){ left:300px; top:600px; height:15px; -webkit-animation:7s -1s infinite liuxing linear; animation:7s infinite liuxing linear;}
+@-webkit-keyframes liuxing{
+	0%{ -webkit-transform:rotate(-45deg) translate(0,0) scaleX(0.5); opacity:0; }
+	40%{ -webkit-transform:rotate(-45deg) translate(-200px,0) scaleX(1); opacity:1;}
+	100%{ -webkit-transform:rotate(-45deg) translate(-500px,0) scaleX(0) }
+}
+@keyframes liuxing{
+	0%{ transform:rotate(-45deg) translate(0,0) scaleX(0.5); opacity:0; }
+	40%{ transform:rotate(-45deg) translate(-200px,0) scaleX(1); opacity:1;}
+	100%{ transform:rotate(-45deg) translate(-500px,0) scaleX(0) }
+}
+
+@-webkit-keyframes move3{
+	from{background-position:0 0;}
+	to{ background-position:-5145px 0;}
+}
+
+@keyframes move3{
+	from{background-position:0 0;}
+	to{ background-position:-5145px 0;}
+}
+
+/* menu */
+.menu{ position:fixed; right:2%; top:50%; z-index:8; margin:auto; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.menu a{ display:block; width:10px; height:10px; border:2px solid #fff; margin:8px 0; border-radius:100%; transition:.5s;}
+.menu a:hover,.menu a.active{ background:#fff;}
+.menu a:hover{ -webkit-transform:scale(1.2); transform:scale(1.2);}
