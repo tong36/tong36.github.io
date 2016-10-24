@@ -1,0 +1,35 @@
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body,p,h1,h3,dl,dd{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+i{
+	font-style: normal;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+input{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+.bg{
+	background: url(../img/ico.png) 0 0 no-repeat;
+}

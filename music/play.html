@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>播放列表</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/play.css"/>
+	</head>
+	<body>
+		<div class="mask"></div>
+		<div id="bg"></div>
+		<div id="promt" class="promt">
+			<div class="top">
+				<h3>删除</h3>
+				<span class="close">×</span>
+			</div>
+			<div class="content">
+				<span class="ico bg"></span>
+				<span class="info">确定删除选定歌曲吗?</span>
+			</div>
+			<div class="confirm">
+				<button class="btn fl" id="yes">确定</button>
+				<button class="btn fr" id="no">取消</button>
+			</div>
+		</div>
+		<div class="tip" id="tip">
+			！请选择要操作的单曲
+		</div>
+		<section class="main">
+			<div class="center">
+				<header class="head">
+					<span id="dele" class="del"/>删除</span>
+				</header>
+				<div class="song-info">
+					<div class="song-item title">
+						<button class="check-box" id="check-all"></button>
+						<div class="song-name">
+							<span class="num"></span>
+							<span class="name">歌曲</span>
+						</div>
+						<div class="singer-name">歌手</div>
+						<div class="duration">时长</div>
+					</div>
+					<div class="list-box">
+						<ul class="song-list">
+							<!--<li class="song-item list">
+								<button class="check-box check"></button>
+								<div class="song-name">
+									<span class="num"></span>
+									<span class="name">歌曲</span>
+								</div>
+								<div class="singer-name">歌手</div>
+								<div class="duration">时长</div>
+								<div class="fun-class">
+									<span class="play item fl">
+										<span class="ico bg"></span>
+									</span>
+									<span class="del item fr">
+										<span class="ico bg"></span>
+									</span>
+								</div>
+							</li>-->
+						</ul>
+						<div class="bar" id="bar"></div>
+					</div>
+				</div>
+				<div class="playbox">
+					<span class="prev bg fl item" title="上一曲"></span>
+					<span class="pause item fl bg" title="暂停/播放"></span>
+					<span class="next item fl bg" title="下一曲"></span>
+					<div class="progress fl">
+						<div class="info">
+							<span class="progress-song-info"><!--就说我们都是华丽的单身族--></span>
+							-
+							<span class="progress-singer-info"><!--Twins--></span>
+							<span class="progress-time fr">
+								<span class="now" id="duration-time"><!--03:01--></span>
+								/
+								<span class="total" id="total-time"><!--04:35--></span>
+							</span>
+						</div>
+						<div class="pro">
+							<span class="now" id="line-duration"></span>
+							<span class="ico" id="line-ico"></span>
+						</div>
+					</div>
+					<div class="volume fl">
+						<span class="ico bg fl" id="vol"></span>
+						<span class="vol fl" id="vol-box">
+							<span class="inner" id="vol-duration"></span>
+							<span class="vol-ico" id="vol-ico"></span>
+						</span>
+					</div>
+					<audio autoplay="autoplay" src="" id="audio"></audio>
+				</div>
+			</div>
+			
+		</section>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/play.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
