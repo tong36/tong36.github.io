@@ -1,4 +1,4 @@
-'use srict'
+'use strict'
 //监听关闭窗口操作，关闭时，清除localstorage中的open数据
 window.onbeforeunload = function(){
 	localStorage.removeItem('open');
@@ -285,7 +285,7 @@ function Play(){
 	this.ele.lineDuration = $('#line-duration');
 	this.ele.lineIco = $('#line-ico');
 	//记录pro的宽度
-	this.proW = parseFloat(this.ele.pro.css('width')); 
+	this.proW = parseFloat(this.ele.pro.css('width'));
 	//声音组
 	this.ele.volBox = $('#vol-box');
 	this.ele.vol = $('#vol');
@@ -355,7 +355,7 @@ Play.prototype.progress = function(){
 }
 //具体进程内容设置
 Play.prototype.setProInfo = function(){
-	var currentTime = this.ele.aud[0].currentTime		
+	var currentTime = this.ele.aud[0].currentTime
 		w = currentTime/this.total * this.proW,
 		duration = this.timeStr(currentTime);
 	this.ele.durationTime.html(duration);
@@ -377,7 +377,7 @@ Play.prototype.drag = function(){
 	this.ele.lineIco.on('mousedown',function(){
 		document.onmousemove = function(ev){
 			var x = _this.ele.pro[0].getBoundingClientRect().left;
-			w = ev.clientX - x;	
+			w = ev.clientX - x;
 			if(w <= 0) w = 0;
 			if(w >= _this.proW) w = _this.proW;
 			duration = _this.timeStr(w/_this.proW * _this.total);
@@ -439,7 +439,7 @@ Play.prototype.dragVol = function(ev){
 	})
 }
 //时间处理
-Play.prototype.timeStr = function(time){  
+Play.prototype.timeStr = function(time){
     var m = 0,
     s = 0,
     _m = '00',
