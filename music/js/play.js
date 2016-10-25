@@ -149,6 +149,7 @@ Init.prototype.scroll = function(scrollEle,scrollParent,targetEle,targetParent){
 	if(scrollEle.offsetHeight == 0){
 		document.onmousewheel = null;
 		document.removeEventListener('DOMMouseScroll',mouseScroll);
+		var T;
 		T = minT;
 		scrollEle.style.top = T + 'px';
 		targetEle.style.top = T/scrollParent.clientHeight * (targetParent.clientHeight - targetEle.offsetHeight) + 'px';
