@@ -32,11 +32,11 @@ var projects = [
 			projectThumbnail:"images/icon/project-2.png"
 		},
 		{
-			projectName:"music",
+			projectName:"Music",
 			projectWebsite:"http://zhibo36.me/music/",
 		    startTime:"2016.06",
 			endTime:"至今",
-			projectExplain:"网页的交互效果非常好，主要运用原生js 配合css3开发完成，鼠标移入移出动态效果吸引眼球，点击调用指定data中的json数据跳转页面，利用原生js实现全选 删除 暂停播放等一系列功能，封装的方法全部原生js实现",
+			projectExplain:"作品接受：主要运用原生js 配合css3开发完成，鼠标移入移出动态效果吸引眼球，点击调用指定data中的json数据跳转页面，利用原生js实现全选 删除 暂停播放等一系列功能，封装的方法全部原生js实现",
 			projectLabel:["html","css3","css","js"],
 			projectThumbnail:"images/icon/project-3.png"
 		},
