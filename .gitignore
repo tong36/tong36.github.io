@@ -1,2 +1,2 @@
 #git ignore file
-.txt
+*.txt
