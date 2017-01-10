@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>腾讯微云</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/tween.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/datas.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/model.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<section class="main-right fl">
+			<div class="right-head">
+				<div class="btn_class fl">
+					<div class="moveto">
+						<span>移动到</span>
+					</div>
+					<div class="rename">
+						<span>重命名</span>
+					</div>
+					<div class="delete">
+						<span>删除</span>
+					</div>
+					<div class="createFolder">
+						<span>新建文件夹</span>
+					</div>
+					<div class="refresh">
+						<span></span>
+					</div>
+				</div>
+				<div class="right-btn">
+					<div title="查看目录树" id="cota">
+						<span ></span>
+					</div>
+					<div title="排序方式" id="order-ico">
+						<span class="order"></span>
+					</div>
+					<ul class="oder-box">
+						<li type="list">按时间排序</li>
+						<li type="list">按字母排序</li>
+						<li class="check" type="thumb">显示缩略图</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-main clearfix">
+				<section class="cotatree fl" style="display: block;">
+					<!--<ul>
+						<li >
+							<div class="check" fileId="0" >
+								<span class="more"></span>
+								<span class="pic"></span>
+								<span class="info">微云</span>
+							</div>
+							<ul>
+								<li >
+									<div class="hover">
+										<span class="more"></span>
+										<span class="pic"></span>
+										<span class="info">微云</span>
+									</div>
+									<ul>
+										
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>-->
+				</section>
+				<div class="file-area fl">
+					<nav id="nav">
+						<div class="checkbox fl">
+							<span id="check-all"></span>
+						</div>
+						<a href="javascript:;" class="check" style="z-index: 200;" id="weiyun">微云</a>
+						<span id="list">
+							<!--<a href="">妙味</a> >-->
+						</span>
+					</nav>
+					<div id="content">
+						<div id="files"></div>
+						<!--<div class="file">-->
+				            <!--<span class="checkbox"></span>-->
+				            <!--<div class="image image-folder"></div>-->
+				            <!--<div class="name">妙味</div>-->
+				        <!--</div>-->
+				        <!--<div class="function-btn">
+				        	<span></span>
+				        	<span></span>
+				        	<span></span>
+				        	<span></span>
+				        	<span></span>
+				        </div>-->
+				        <div id="empty">
+				        	<strong>暂无文件</strong>
+				        	<i>请点击左上角的"上传"按钮添加</i>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="file" id="createFolder">
+			<div class="image image-folder"></div>
+			<div class="name">
+				<input type="text" id="txt"/>
+			</div>
+		</div>
+		<div id="tip">
+			<span class="ico"></span>
+			<span class="text"></span>
+		</div>
+		<input type="text" id="rename" />
+		<div id="promt">
+			<div class="top">
+				<h3><!--删除文件--></h3>
+				<span>×</span>
+			</div>
+			<div class="content">
+				<span class="ico"></span>
+				<span class="info"><!--确定要删除选定的文件夹吗？--></span>
+			</div>
+			<div class="content-move">
+				<div class="move-top">
+					<span class="ico"></span>
+					<span class="info"></span>
+				</div>
+				<div class="move-content">
+					<div class="move-content-top">
+						<span>移动到：</span>
+						<span></span>
+					</div>
+					<div class="move-content-main">
+						<p class="con">
+							<!--<ul>
+							<li>
+								<div class="check" fileId="0" >
+									<span class="more"></span>
+									<span class="pic"></span>
+									<span class="info">微云</span>
+								</div>
+								<ul>
+									<li>
+										<div class="hover">
+											<span class="more"></span>
+											<span class="pic"></span>
+											<span class="info">微云</span>
+										</div>
+										<ul>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>-->
+						</p>
+						<i class="scroll"></i>
+					</div>
+				</div>	
+			</div>
+			<div class="confirm">
+				<input type="button" value="确定" />
+				<input type="button" value="取消" />
+			</div>
+		</div>
+		<div id="bg"></div>
+		<div class="drag_box">
+			<span class="darg_num"></span>
+			<div class="ico"></div>
+		</div>
+		<ul id="menu">
+			<li>
+				<span>下载</span>
+			</li>
+			<li>
+				<span>删除</span>
+			</li>
+			<li>
+				<span>移动到</span>
+			</li>
+			<li>
+				<span>重命名</span>
+			</li>
+			<li>
+				<span>获取二维码</span>
+			</li>
+			<li>
+				<span>分享</span>
+			</li>
+		</ul>
+		<div id="box-check" class="box-check"></div>
+		<script src="js/viewandctrl.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
