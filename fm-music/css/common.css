@@ -1,0 +1,73 @@
+html,
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+p,
+a {
+    padding: 0;
+    margin: 0;
+}
+ul,
+li {
+    list-style: none;
+}
+body{
+	font-size: 12px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.dn{
+	display:none;
+}
+.db{
+	display:block;
+}
+.li_selected:before{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:5px;
+	height:30px;
+	background-color:#db4437;
+}
+.point_pause{
+    transform: rotate(-30deg); 
+    transform-origin: 10px 0;
+}
+.active{
+	animation-name: rotate;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.p_lyric{
+	color: #fff;
+}
+@keyframes rotate{
+	0% {
+		-webkit-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
